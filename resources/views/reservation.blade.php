@@ -1,6 +1,6 @@
 <x-layout>
       <!-- Reservation Page -->
-        <section id="reservation-page" class="page">
+        <div div class="page">
             <div class="container mx-auto px-4 py-16">
                 <div class="max-w-4xl mx-auto">
                     <h1 class="section-title text-center">Reserve Your Apartment</h1>
@@ -101,10 +101,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- Contact Page -->
-        <section id="contact-page" class="page">
+        <div id="contact-page" class="page">
             <div class="container mx-auto px-4 py-16">
                 <h1 class="section-title text-center">Contact Us</h1>
                 <p class="text-center text-gray-600 dark:text-gray-400 mb-12">We're here to help you find your dream apartment</p>
@@ -207,5 +207,5 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 </x-layout>
