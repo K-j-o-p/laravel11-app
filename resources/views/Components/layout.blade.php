@@ -85,7 +85,7 @@
 
     <script>
         // Dark mode toggle
-        const themeToggle = document.getElementById('theme-toggle');
+     /*   const themeToggle = document.getElementById('theme-toggle');
         const htmlElement = document.documentElement;
         
         // Mobile menu toggle
@@ -164,6 +164,6 @@
                 window.scrollTo(0, 0);
             });
         });
-    </script>
+    </script> 
 </body>
 </html>
