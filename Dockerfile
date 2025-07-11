@@ -18,6 +18,9 @@ ENV LOG_CHANNEL stderr
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
+# Expose port 80
+EXPOSE 80
+
 # Set proper permissions
 RUN chown -R nginx:nginx /var/www/html \
     && chmod -R 755 /var/www/html/storage \
