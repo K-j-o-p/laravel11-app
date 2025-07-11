@@ -63,107 +63,19 @@
 </head>
 <body class="font-sans bg-gray-50 dark:bg-slate-900 text-gray-700 dark:text-gray-300">
     <!-- Header/Navigation -->
-    <x-navbar>
-
-    </x-navbar>
+    <x-navbar></x-navbar>
 
     <!-- Page Content -->
     <main id="page-content">
-        <!-- Home Page -->
-        
-              {{$slot}}
-        <!-- Properties Page -->
-        
-
-      
-
-      >
+        {{$slot}}
     </main>
 
     <!-- Footer -->
     <x-footer></x-footer>
 
     <script>
-        // Dark mode toggle
-     /*   const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
-        
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu');
-        const mobileNav = document.getElementById('mobile-nav');
-        
-        // Page navigation
-        const pages = document.querySelectorAll('.page');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        // Check for saved theme preference
-        if (localStorage.getItem('theme') === 'dark') {
-            htmlElement.classList.add('dark');
-        }
-        
-        // Toggle dark mode
-        themeToggle.addEventListener('click', () => {
-            htmlElement.classList.toggle('dark');
-            
-            // Save preference
-            if (htmlElement.classList.contains('dark')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
-        
-        // Toggle mobile menu
-        mobileMenuButton.addEventListener('click', () => {
-            mobileNav.classList.toggle('hidden');
-        });
-        
-        // Page navigation
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetPage = link.getAttribute('data-page');
-                
-                // Hide all pages
-                pages.forEach(page => {
-                    page.classList.remove('active');
-                    page.classList.add('hidden');
-                });
-                
-                // Show target page
-                document.getElementById(`${targetPage}-page`).classList.remove('hidden');
-                document.getElementById(`${targetPage}-page`).classList.add('active');
-                
-                // Close mobile menu if open
-                mobileNav.classList.add('hidden');
-                
-                // Scroll to top
-                window.scrollTo(0, 0);
-            });
-        });
-        
-        // Handle buttons with data-page attribute
-        document.querySelectorAll('[data-page]').forEach(button => {
-            button.addEventListener('click', () => {
-                const targetPage = button.getAttribute('data-page');
-                
-                // Hide all pages
-                pages.forEach(page => {
-                    page.classList.remove('active');
-                    page.classList.add('hidden');
-                });
-                
-                // Show target page
-                document.getElementById(`${targetPage}-page`).classList.remove('hidden');
-                document.getElementById(`${targetPage}-page`).classList.add('active');
-                
-                // Close mobile menu if open
-                mobileNav.classList.add('hidden');
-                
-                // Scroll to top
-                window.scrollTo(0, 0);
-            });
-        });
-    </script> 
+        // Dark mode toggle functionality can be added here
+        console.log('Layout loaded successfully');
+    </script>
 </body>
 </html>
