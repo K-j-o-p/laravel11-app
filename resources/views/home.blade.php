@@ -1,5 +1,5 @@
-<x-layout>
-    <section id="home-page" class="page active">
+
+    <div id="home-page" class="page active">
             <!-- Hero Section -->
             <div class="relative bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-slate-900">
                 <div class="container mx-auto px-4 py-20 md:py-28 flex flex-col md:flex-row items-center">
@@ -29,7 +29,7 @@
             </div>
 
             <!-- Featured Properties -->
-            <section class="py-20 bg-gray-100 dark:bg-slate-800">
+            <div class="py-20 bg-gray-100 dark:bg-slate-800">
                 <div class="container mx-auto px-4">
                     <h2 class="section-title text-center">Featured Properties</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -132,10 +132,10 @@
                         <button class="btn btn-primary" data-page="properties">View All Properties</button>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- Services -->
-            <section class="py-20">
+            <div class="py-20">
                 <div class="container mx-auto px-4">
                     <h2 class="section-title text-center">Our Services</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -172,10 +172,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- Testimonials -->
-            <section class="py-20 bg-gray-100 dark:bg-slate-800">
+            <div class="py-20 bg-gray-100 dark:bg-slate-800">
                 <div class="container mx-auto px-4">
                     <h2 class="section-title text-center">What Our Clients Say</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -237,6 +237,5 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </section>
-</x-layout>
+            </div>
+        </div>
