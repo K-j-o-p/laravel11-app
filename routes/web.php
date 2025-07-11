@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home' ,["men"=>"[
-    'name'=>'joel',
-    'age'=> 20]"]);
+    return view('home', [
+        "greeting"=>"WELCOME !!!!!!!!!!"
+    ] );
 });
 
 Route::get('/properties', function () {

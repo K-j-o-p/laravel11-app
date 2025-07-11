@@ -1,4 +1,4 @@
- <div id="home-page" class="page active">
+ <div >
             <!-- Hero Section -->
             <div class="relative bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-slate-900">
                 <div class="container mx-auto px-4 py-20 md:py-28 flex flex-col md:flex-row items-center">
