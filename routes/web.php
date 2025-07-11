@@ -4,7 +4,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        "greeting"=>"WELCOME !!!!!!!!!!"
+         'apartments'=>[
+            [
+                'name'=>'Apartment 1',
+                'location'=>'Tema',
+                'price'=> 100
+            ],
+
+            [
+                'name'=>'Apartment 2',
+                'location'=>'Tema',
+                'price'=> 100
+            ],
+         ]
     ] );
 });
 
