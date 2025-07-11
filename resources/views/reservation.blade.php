@@ -1,6 +1,6 @@
 <x-layout>
       <!-- Reservation Page -->
-        <div div class="page">
+        <div class="page">
             <div class="container mx-auto px-4 py-16">
                 <div class="max-w-4xl mx-auto">
                     <h1 class="section-title text-center">Reserve Your Apartment</h1>

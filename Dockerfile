@@ -1,5 +1,6 @@
 FROM richarvey/nginx-php-fpm:3.1.6
 
+# Copy application files
 COPY . .
 
 # Image config
@@ -16,5 +17,10 @@ ENV LOG_CHANNEL stderr
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
+
+# Set proper permissions
+RUN chown -R nginx:nginx /var/www/html \
+    && chmod -R 755 /var/www/html/storage \
+    && chmod -R 755 /var/www/html/bootstrap/cache
 
 CMD ["/start.sh"]
