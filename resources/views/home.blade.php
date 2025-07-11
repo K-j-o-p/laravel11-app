@@ -13,6 +13,7 @@
                         <div class="flex flex-wrap gap-4">
                             <button class="btn btn-primary px-8 py-4 text-lg" data-page="properties">Explore Properties</button>
                             <button class="btn bg-white dark:bg-slate-800 dark:text-white px-8 py-4 text-lg border border-gray-300 dark:border-slate-700">Virtual Tour</button>
+                            <button class="btn bg-white dark:bg-slate-800 dark:text-white px-8 py-4 text-lg border border-gray-300 dark:border-slate-700">Virtual Tour</button>
                         </div>
                     </div>
                     <div class="md:w-1/2 relative">
