@@ -1,9 +1,16 @@
-@foreach ($apartments as $apartment)
-  <h1>
-    {{ $apartment['name']}}
-    {{ $apartment['location']}}
-    {{ $apartment['price']}}
-    {{ $apartment['description']}}
-  </h1>
+<ul>
+ @foreach ($apartments as $apartment)
+  
+    <li>
+        <a href="/apartments/{{$apartment['id']}}">
+            {{ $apartment['name']}}
+            {{ $apartment['location']}}
+            {{ $apartment['price']}}
+            {{ $apartment['description']}}
+        </a>
+    </li>
+ 
       
   @endforeach
+
+</ul>

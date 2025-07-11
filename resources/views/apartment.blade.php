@@ -1,0 +1,1 @@
+<h1>{{ $apartment['name'] }} - {{ $apartment['location'] }}</h1>

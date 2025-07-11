@@ -9,7 +9,8 @@ Route::get('/', function () {
 Route::get('/apartments', function () {
     return view('apartments', [
          'apartments'=>[
-            [
+            [    
+                'id'=> 1,
                 'name'=>'Apartment 1',
                 'location'=>'Tema',
                 'price'=> 100,
@@ -17,6 +18,7 @@ Route::get('/apartments', function () {
             ],
 
             [
+                'id'=> 2,
                 'name'=>'Apartment 2',
                 'location'=>'Tema',
                 'price'=> 100,
@@ -26,7 +28,30 @@ Route::get('/apartments', function () {
     ] );
 });
 
-Route::get('/properties', function () {
+Route::get('/apartments/{id} ', function ($id) {
+    $apartments =[
+            [    
+                'id'=> 1,
+                'name'=>'Apartment 1',
+                'location'=>'Tema',
+                'price'=> 100,
+                'description'=>'A beautiful apartment in Tema with morden amenities.'
+            ],
+
+            [
+                'id'=> 2,
+                'name'=>'Apartment 2',
+                'location'=>'Tema',
+                'price'=> 100,
+                'description'=>'A beautiful apartment in Tema with morden amenities.'
+            ],
+        ];
+         $apartment =  \Illuminate\Support\Arr::first($apartments, fn($apartment)=> $apartment['id']== $id);
+
+          return view('apartment',['apartment'=> $apartment]);
+});
+
+Route::get('/properties ', function () {
     return view('properties');
 });
 
